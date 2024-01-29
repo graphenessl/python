@@ -51,17 +51,17 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     ```
 
 9. ## **Arrays**:
-Although Python does not support arrays natively, you can use `array` or `numpy` modules for it. In general, they are more memory efficient than lists.  
+    Although Python does not support arrays natively, you can use `array` or `numpy` modules for it. In general, they are more memory efficient than lists.  
 
-```python
-from array import array
-python_array = array( 'i', [1, 2, 3, 4, 5] )  # 'i' is the type code for integers
-```
+    ```python
+    from array import array
+    python_array = array( 'i', [1, 2, 3, 4, 5] )  # 'i' is the type code for integers
+    ```
 
-```python
-import numpy as np
-numpy_array = np.array( [1, 2, 3, 4, 5] ) # For memory efficient calculations
-```
+    ```python
+    import numpy as np
+    numpy_array = np.array( [1, 2, 3, 4, 5] ) # For memory efficient calculations
+    ```
 
 10. ## **Tuples**:
     Similar to lists, but tuples are **immutable** (elements cannot be changed).
