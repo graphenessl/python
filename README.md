@@ -153,7 +153,7 @@ class Employee:
 # Class
 class Car:
 
-    # Class attribute
+    # Class (Static) attributes
     # Variables of a class that are shared between all of its instances. They are
     # variables that are inherited by every object of a class. The value of class attributes remain the same for every new object
     # Attributes hold the internal state of objects
