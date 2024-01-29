@@ -36,44 +36,50 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
 7. ## **Booleans**:
     The `True` and `False` boolean values can be assigned to variables.
     ```python
-    f = True
+    isReady = True
     ```
 
 8. ## **Lists**:
     A list is an ordered collection of elements, which can be of mixed types.
     ```python
-    g = [1, 2, 3, "apple"]
+    list = [1, 2, 3, "apple"]
     ```
 
-9. ## **Tuples**:
+    NOTE: You can't do this:
+   ```python
+   list = [x = 5, y = 10]
+   ```
+
+10. ## **Tuples**:
     Similar to lists, but tuples are **immutable** (elements cannot be changed).
     ```python
-    h = (1, 2, "banana")
+    unchangeable = (1, 2, "banana")
     ```
 
-10. ## **Dictionaries**:
+11. ## **Dictionaries**:
     Dictionaries store **key-value** pairs.
     ```python
-    i = {"name": "Alice", "age": 30}
+    dictionary = { "name": "Alice",
+                   "age": 30 }
     ```
 
-11. ## **Sets**:
+12. ## **Sets**:
     Sets are an **unordered** collection of **unique elements**.
     ```python
-    j = {1, 2, 3}
+    collection = { 1, 2, 3 }
     ```
 
-12. ## **Functions**:
+13. ## **Functions**:
     You can assign functions to variables.
     ```python
     def greet():
         return "Hello"
     
-    k = greet
-    print (k() )  # Output: Hello
+    greeting = greet
+    print ( greet() )  # Output: Hello
     ```
 
-13. ## **Objects**:
+14. ## **Objects**:
     Instances of classes can be assigned to variables.
     ```python
     class Person:
@@ -85,7 +91,7 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     l = Person("Bob")
     ```
 
-14. ## **Modules**:
+15. ## **Modules**:
     You can assign imported modules to variables.
     ```python
     import math as math_module
@@ -95,7 +101,7 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     print(m.sqrt(16))  # Output: 4.0
     ```
 
-15. ## **Unspecified amount of arguments**:
+16. ## **Unspecified amount of arguments**:
 If the number of arguments is unknown, add a `*` before the parameter name:
 
 ```python
