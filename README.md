@@ -243,8 +243,24 @@ print(my_car.mileage)
 my_car.mileage = 15000
 print(my_car.mileage)
 
+# Data structure types
+
 # Trying to roll back the my_car.mileage = 15000
 my_car.mileage = 10000  # This will trigger the print statement in the setter
-
-# Deleting the odometer reading (deleter)
 del my_car.mileage
+```
+
+# Misc
+## 1. Function return type with multiple values is `tuple`
+If you have a function like this:
+```python
+   function math()
+      observation = 1
+      info = 2
+      return observation, info
+```
+and you try to assign it to a sinle variable, the resulting data structure of that variable will be `tuple`
+
+```
+tuple_result = math()
+```
