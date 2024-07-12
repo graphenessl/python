@@ -161,7 +161,7 @@ class Car:
     #  They’ll be public attributes, which means that your users will directly access and mutate the attributes in their code.
     wheels = 4  # All cars have 4 wheels
 
-    # Constructor
+    # Constructor: Constructors are special methods used to initialize new objects
     def __init__( self, manufacturer, model, year ):
         # Instance attributes
         # Owned by one specific instance of the class and are not shared between instances.
@@ -261,6 +261,19 @@ If you have a function like this:
 ```
 and you try to assign it to a sinle variable, the resulting data structure of that variable will be `tuple`
 
-```
+```python
 tuple_result = math()
+```
+## 2. Class inheritance
+Here `ModifiedCar` inherits all the functionality of parent class `Car`, so it can modify or extend it.
+```python
+class ModifiedCar( Car ):
+```
+## 3. Instantiate inherited properties of parent class
+```python
+class ModifiedCar( Car ):
+   
+   def __init__(self, params): # Define the constructor function of the current class
+
+      super( Car, self ).__init__() # Initiate the constructor of the parent class. Without this features of `Car` won't be initialized/copied alongside `ModifiedCar`
 ```
