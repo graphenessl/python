@@ -212,8 +212,8 @@ class Car:
         return f" {self.year} {self.manufacturer} {self.model} "
 
     # Class method: Can be called `without instantiating an object of this class`
-    # In fact, if you define something to be a classmethod, it is probably because you intend to call it from the class
-    # rather than from a class instance. If your method accesses other variables/methods in your class then use @classmethod
+    # In fact, if you define something to be a class method, it is probably because you intend to call it from the class
+    # rather than from a class' instance. If your method accesses other variables/methods in your class then use @classmethod
     @classmethod
     def from_string(cls, car_string):
         make, model, year = car_string.split('-')
