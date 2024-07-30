@@ -277,3 +277,6 @@ class ModifiedCar( Car ):
 
       super( Car, self ).__init__() # Initiate the constructor of the parent class. Without this features of `Car` won't be initialized/copied alongside `ModifiedCar`
 ```
+## 4. `cls` vs `self`
+- `cls` implies that method belongs to the **class itself**
+- `self` implies that the method is related to an **instance of the class**
