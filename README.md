@@ -124,13 +124,12 @@ def my_function( *kids ):
    # OUTPUT: `The youngest child is Linus`
 
 my_function("Emil", "Tobias", "Linus")
-```python
+```
 
 16. ## **Classess**:
 ```python
 # declare a class
 class Employee:
-
 
    count = 0
 
@@ -146,10 +145,9 @@ class Employee:
      if amount < 0:
          raise ValueError("Amount cannot be negative")
      self._balance += amount
-```python
+```
 
 ```python
-
 # Class
 class Car:
 
