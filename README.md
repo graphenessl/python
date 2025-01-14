@@ -81,6 +81,10 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     ```python
     collection = { 1, 2, 3 }
     ```
+        
+   **Notes**: 
+   - They consume in general less memory than a `dictionary` because they store only keys.
+   - If you try to use `{}` for an empty set, it will always result in an **empty `dictionary`**.
 
 13. ## **Functions**:
     You can assign functions to variables.
