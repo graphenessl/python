@@ -75,18 +75,30 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     dictionary = { "name": "Alice",
                    "age": 30 }
     ```
-
-12. ## **Sets**:
+    
+    **Notes:**
+    - How to access a dictionary: `dictionary['name']`
+    - You can't directly define a subkey of a dictionry via:
+    ```python
+    dictionary['name']['nickname'] = "jacky"
+    ```
+    Instead you have to do:
+    ```python
+    dictionary['name'] = {}
+    dictionary['name']['nickname'] = "jacky"
+    ```
+        
+13. ## **Sets**:
     Sets are an **unordered** collection of **unique elements**.
     ```python
     collection = { 1, 2, 3 }
     ```
         
-   **Notes**: 
-   - They consume in general less memory than a `dictionary` because they store only keys.
-   - If you try to use `{}` for an empty set, it will always result in an **empty `dictionary`**.
+    **Notes**: 
+    - They consume in general less memory than a `dictionary` because they store only keys.
+    - If you try to use `{}` for an empty set, it will always result in an **empty `dictionary`**.
 
-13. ## **Functions**:
+14. ## **Functions**:
     You can assign functions to variables.
     ```python
     def greet():
@@ -96,7 +108,7 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     print ( greet() )  # Output: Hello
     ```
 
-14. ## **Objects**:
+15. ## **Objects**:
     Instances of classes can be assigned to variables.
     ```python
     class Person:
@@ -108,7 +120,7 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     customer = Person("Bob")
     ```
 
-15. ## **Modules**:
+16. ## **Modules**:
     You can assign imported modules to variables.
     ```python
     import math as math_module
@@ -118,7 +130,7 @@ Python does not have a concept of "undefined" like JavaScript, so if a variable 
     print(m.sqrt(16))  # Output: 4.0
     ```
 
-16. ## **Unspecified amount of arguments**:
+17. ## **Unspecified amount of arguments**:
 If the number of arguments is unknown, add a `*` before the parameter name:
 
 ```python
